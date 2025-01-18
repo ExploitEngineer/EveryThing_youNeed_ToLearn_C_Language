@@ -10,6 +10,8 @@ int main()
     i++; // 11 | & what if i can do this like that
     ++i; // how are these different i++ & ++i;
     printf("The value of i is %d\n", i);
+
+    i += 2; // Same as i = i + 2  (compound assignment operator)
     return 0;
 }
 

@@ -6,10 +6,6 @@ Welcome to the **Everything You Need to Learn C Language** repository! 🚀 This
 
 ## 📚 About This Repository
 
-<p align="center">
-    <img src="https://via.placeholder.com/800x400.png?text=C+Language+Learning+Repository" alt="C Language Learning Repository" width="800"/>
-</p>
-
 This repository is structured to cater to learners of all levels:
 
 - **Beginners** can build a strong foundation in C programming with detailed explanations and examples.

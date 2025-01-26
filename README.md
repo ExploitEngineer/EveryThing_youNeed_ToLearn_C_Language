@@ -218,14 +218,9 @@ If you find this repository helpful, please consider supporting it by:
 
 ## 📷 Repository Previews
 
-### Code Examples
+### My Github Profile 
 <p align="center">
-    <img src="https://via.placeholder.com/800x400.png?text=Code+Examples" alt="Preview of Code Examples" width="800"/>
-</p>
-
-### Sample Projects
-<p align="center">
-    <img src="https://via.placeholder.com/800x400.png?text=Sample+Projects" alt="Preview of Sample Projects" width="800"/>
+    <a href="https://github.com/DSnake0" target="_blank">Click Here</a>
 </p>
 
 ---

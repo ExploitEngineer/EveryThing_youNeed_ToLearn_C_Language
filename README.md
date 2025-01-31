@@ -36,7 +36,7 @@ Use the following command to clone the repository to your local machine:
 
 ```bash
 # Clone the repository
-git clone https://github.com/DSnake0/EveryThing_youNeed_ToLearn_C_Language.git
+git clone https://github.com/ExploitEngineer/EveryThing_youNeed_ToLearn_C_Language.git
 
 # Navigate into the folder
 cd EveryThing_youNeed_ToLearn_C_Language
@@ -202,7 +202,7 @@ If you find this repository helpful, please consider supporting it by:
 - Sharing it with your friends and peers.
 
 <p align="center">
-    <a href="https://github.com/DSnake0/EveryThing_youNeed_ToLearn_C_Language" target="_blank">
+    <a href="https://github.com/ExploitEngineer/EveryThing_youNeed_ToLearn_C_Language" target="_blank">
         <img src="https://img.shields.io/badge/Star-⭐%20this%20repo-blue" alt="GitHub Star Badge"/>
     </a>
     <a href="#contributions" target="_blank">
@@ -216,7 +216,7 @@ If you find this repository helpful, please consider supporting it by:
 
 ### My Github Profile 
 <p align="center">
-    <a href="https://github.com/DSnake0" target="_blank">Click Here</a>
+    <a href="https://github.com/ExploitEngineer" target="_blank">Click Here</a>
 </p>
 
 ---

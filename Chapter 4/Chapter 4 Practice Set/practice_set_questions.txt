@@ -16,3 +16,9 @@ Question no 6). Write a program to implement program 5 using 'for' and 'do-while
 Question no 7). Write a program to calculate the sum of the numbers occuring the multiplication table of 8. (consider 8 x 1 to 8 x 10).
 
 Question no 8). Write a program to calculate the factorial of a given number using a for loop.
+
+Question no 9). Repeat 8 using while loop.
+
+Question no 10). Write a program to check whether a given number is prime or not using loops.
+
+Question no 11). Implement 10 using other types of loops.

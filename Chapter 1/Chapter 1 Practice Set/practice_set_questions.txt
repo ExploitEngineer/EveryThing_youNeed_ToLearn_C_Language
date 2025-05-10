@@ -1,9 +1,0 @@
-Question no (1). Write a c Program to calculate area of a rectangle.
-a). Using hard coded Inputs.
-b). Using inputs supplied by the user.
-
-
-Question no (2). Calculate the area of a circle and modify the same program to calculate the volume of a cylinder given its radius and height.
-
-
-Question no (3). Write a program to convert celsius to fahrenheit formula.

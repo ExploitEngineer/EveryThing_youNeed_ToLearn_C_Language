@@ -1,0 +1,29 @@
+# Ignore object files
+*.o
+
+# Ignore binary files (commonly produced)
+*.out
+*.elf
+*.bin
+
+# But DO NOT ignore .exe files
+# (So don't include: *.exe)
+
+# Ignore build directories (recursively)
+build/
+bin/
+out/
+dist/
+
+# Ignore CMake and Make artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore editor or OS-generated files
+.vscode/
+*.swp
+*.tmp
+.DS_Store
+

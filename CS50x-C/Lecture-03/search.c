@@ -8,6 +8,8 @@ int main(void) {
 
   string s = get_string("String: ");
   for (int i = 0; i < 6; i++) {
+
+    // strcmp (string compare)
     if (strcmp(strings[i], s) == 0) {
       printf("Found\n");
       return 0;

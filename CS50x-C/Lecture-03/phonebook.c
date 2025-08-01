@@ -22,7 +22,7 @@ int main(void) {
   string name = get_string("Name: ");
   for (int i = 0; i < 3; i++) {
     if (strcmp(people[i].name, name) == 0) {
-      printf("Found %s\n", people[i].number);
+      printf("Found\n");
       return 0;
     }
   }

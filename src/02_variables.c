@@ -49,7 +49,7 @@ int main()
     bool forSale = false;
 
     printf("%d\n", isOnline);
-    if (isStudent)
+    if(isStudent)
     {
         printf("You are a student\n");
     }
@@ -57,7 +57,7 @@ int main()
     {
         printf("You are not a student\n");
     }
-    if (forSale)
+    if(forSale)
     {
         printf("That item is for sale\n");
     }

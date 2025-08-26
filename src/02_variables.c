@@ -6,6 +6,13 @@ int main()
 
     // variable = A reusable container for a value. Behaves as if it were the value it contains.
 
+    // int = whoel number (4 bytes in modern systems)
+    // float = single-precision decimal number (4 bytes)
+    // double = double-precision decimal number (8 bytes)
+    // char = single charactr (1 byte)
+    // char[] = array of characters (size varies)
+    // bool = true or false (1 byte, requires <stdbool.h>)
+
     int age = 25;
     int year = 2025;
     int quantity = 1;
@@ -14,6 +21,7 @@ int main()
     printf("The year is %d\n", year);
     printf("You have ordered %d\n", quantity);
 
+    // NOTE: C has a default behaviour of displaying 6 digits after the decimal when working with floating point numbers
     float gpa = 2.5;
     float price = 9.99;
     float temperature = -10.1;

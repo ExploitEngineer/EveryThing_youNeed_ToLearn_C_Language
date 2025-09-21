@@ -6,7 +6,7 @@ int main()
 
     // variable = A reusable container for a value. Behaves as if it were the value it contains.
 
-    // int = whoel number (4 bytes in modern systems)
+    // int = whole number (4 bytes in modern systems)
     // float = single-precision decimal number (4 bytes)
     // double = double-precision decimal number (8 bytes)
     // char = single charactr (1 byte)

@@ -16,13 +16,13 @@ This repository is structured to cater to learners of all levels:
 
 ## 🗂️ Repository Structure
 
-| Section             | Description                                                                                      |
-|---------------------|--------------------------------------------------------------------------------------------------|
-| **Code Examples**   | A collection of organized, ready-to-run code snippets covering basic to advanced topics.         |
-| **Notes**           | Detailed, well-structured notes in Markdown and PDF formats with diagrams and examples.          |
-| **Exercises**       | Practice problems with solutions, including mini-projects to apply your knowledge.               |
-| **Projects**        | Real-world projects to help you integrate and expand your skills.                               |
-| **Resources**       | A curated list of tools, websites, books, and references to enhance your learning experience.    |
+| Section           | Description                                                                                   |
+| ----------------- | --------------------------------------------------------------------------------------------- |
+| **Code Examples** | A collection of organized, ready-to-run code snippets covering basic to advanced topics.      |
+| **Notes**         | Detailed, well-structured notes in Markdown and PDF formats with diagrams and examples.       |
+| **Exercises**     | Practice problems with solutions, including mini-projects to apply your knowledge.            |
+| **Projects**      | Real-world projects to help you integrate and expand your skills.                             |
+| **Resources**     | A curated list of tools, websites, books, and references to enhance your learning experience. |
 
 ---
 
@@ -149,24 +149,6 @@ To get started with C programming, you’ll need:
 
 ---
 
-## 🌟 Sample Projects
-
-Test your skills with these real-world projects:
-
-1. **Library Management System**
-   - Manage books, members, and transactions using file handling.
-
-2. **Banking Application**
-   - Simulate account management with deposits, withdrawals, and balance inquiries.
-
-3. **Simple Text Editor**
-   - A command-line program for creating and editing text files.
-
-4. **Tic-Tac-Toe Game**
-   - Play the classic game against the computer or a friend.
-
----
-
 ## 📬 Contributions
 
 We welcome contributions to improve this repository! Here’s how you can contribute:
@@ -176,6 +158,7 @@ We welcome contributions to improve this repository! Here’s how you can contri
 
 2. **Clone Your Fork**
    - Use the following command:
+
      ```bash
      git clone https://github.com/your-username/EveryThing_youNeed_ToLearn_C_Language.git
      ```
@@ -212,14 +195,4 @@ If you find this repository helpful, please consider supporting it by:
 
 ---
 
-## 📷 Repository Previews
-
-### My Github Profile 
-<p align="center">
-    <a href="https://github.com/ExploitEngineer" target="_blank">Click Here</a>
-</p>
-
----
-
 ## 🖥️ Happy Learning and Coding! 🎉
-

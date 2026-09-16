@@ -1,198 +1,72 @@
-# 🌟 Everything You Need to Learn C Language
+# Everything You Need to Learn C
 
-Welcome to the **Everything You Need to Learn C Language** repository! 🚀 This is your ultimate one-stop guide for mastering the **C programming language** with **comprehensive notes, examples, exercises, projects, and more!** Whether you’re just starting or brushing up on your skills, this repository has got you covered.
+My working repository for learning C properly, from the language basics through
+memory, the UNIX system call layer, data structures, and real low-level projects.
 
----
+The folder structure follows my C language roadmap: six phases, each one broken
+into the topics it covers.
+Every phase has a `README.md` with the topic checklist for that phase, so the
+repository doubles as the progress tracker.
 
-## 📚 About This Repository
+## Layout
 
-This repository is structured to cater to learners of all levels:
+| Path | What is in it |
+| --- | --- |
+| `phase-0-foundations/` | Types, storage classes, operators, control flow, functions, build basics |
+| `phase-1-language-core/` | Compilation model, pointers, arrays and strings, I/O, structs |
+| `phase-2-memory-mastery/` | Memory layout, malloc/free/realloc, void pointers, dynamic structures |
+| `phase-3-system-level/` | File descriptors, processes, signals, pipes, buffers, binary I/O, threads |
+| `phase-4-data-structures/` | Stacks, queues, lists, hash tables, trees, recursion, searching, sorting |
+| `phase-5-projects/` | The end-of-roadmap projects |
+| `docs/` | Reference PDFs |
+| `vendor/libcs50/` | The CS50 helper library, used by a handful of examples |
+| `tools/` | Third-party installers kept out of the way |
 
-- **Beginners** can build a strong foundation in C programming with detailed explanations and examples.
-- **Intermediate learners** can solidify their understanding through hands-on exercises and real-world projects.
-- **Advanced users** can utilize this as a reference for concepts, best practices, and advanced topics.
+Within a phase, folders are numbered in the order the roadmap teaches them.
+File names say what the example demonstrates, so `grep` and tab completion both
+work: `pointer-arithmetic.c`, `stack-overflow-vla.c`, `realloc-grow-array.c`.
 
----
+## Building and running
 
-## 🗂️ Repository Structure
-
-| Section           | Description                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| **Code Examples** | A collection of organized, ready-to-run code snippets covering basic to advanced topics.      |
-| **Notes**         | Detailed, well-structured notes in Markdown and PDF formats with diagrams and examples.       |
-| **Exercises**     | Practice problems with solutions, including mini-projects to apply your knowledge.            |
-| **Projects**      | Real-world projects to help you integrate and expand your skills.                             |
-| **Resources**     | A curated list of tools, websites, books, and references to enhance your learning experience. |
-
----
-
-## 🚀 How to Get Started
-
-Here’s how you can start learning and coding in C with this repository:
-
-### 1. **Clone the Repository**
-
-Use the following command to clone the repository to your local machine:
+Everything compiles through the root `Makefile` with `-std=c17 -Wall -Wextra -g`.
 
 ```bash
-# Clone the repository
-git clone https://github.com/ExploitEngineer/EveryThing_youNeed_ToLearn_C_Language.git
+# compile and run one example
+make run FILE=phase-1-language-core/03-pointers/pointer-basics.c
 
-# Navigate into the folder
-cd EveryThing_youNeed_ToLearn_C_Language
+# pass arguments to the program
+make run FILE=phase-3-system-level/02-process-control/argv-greet.c ARGS="world"
+
+# link an extra translation unit (only needed when the header name does not
+# match the .c file name, which is rare here)
+make run FILE=driver.c EXTRA="helper.c"
+
+# compile every example in the repo, keep going, report failures
+make check
+
+# list every example that has a main()
+make list
+
+make clean
 ```
 
-### 2. **Explore the Repository**
+Two things are worked out automatically, so they never need to be passed by hand:
 
-Browse the organized structure and dive into topics:
+- a local `#include "foo.h"` pulls in a sibling `foo.c` if one exists
+- `#include <cs50.h>` pulls in `vendor/libcs50`
 
-```bash
-# Example: Open the "Code Examples" folder
-cd Code_Examples
-ls
-```
+Binaries land in `build/`, which is gitignored.
 
-### 3. **Run Code Examples**
+## Known-noisy examples
 
-Compile and run any example program using a C compiler (e.g., GCC):
+`make check` is expected to pass with zero failures.
+A few files still emit warnings on purpose:
 
-```bash
-# Compile the C program
-gcc filename.c -o output
+- `phase-0-foundations/01-datatypes/primitive-types.c` and friends are
+  declaration catalogues, so `-Wunused-variable` fires by design
+- `phase-1-language-core/03-pointers/uninitialized-pointer-segfault.c` and
+  `uninitialized-memory.c` exist to demonstrate undefined behaviour
 
-# Run the executable
-./output
-```
+## Roadmap
 
-### 4. **Automate Compilation (Optional)**
-
-To streamline the compilation and execution process, we’ve included a simple Bash script:
-
-```bash
-#!/bin/bash
-# compile_and_run.sh: Compile and run a C program
-
-if [ $# -eq 0 ]; then
-    echo "Usage: ./compile_and_run.sh <filename.c>"
-    exit 1
-fi
-
-FILENAME=$1
-EXECUTABLE="output"
-
-# Compile the program
-if gcc $FILENAME -o $EXECUTABLE; then
-    echo "Compilation successful! Running the program..."
-    ./$EXECUTABLE
-else
-    echo "Compilation failed. Please check your code."
-fi
-```
-
-Run the script as follows:
-
-```bash
-./compile_and_run.sh filename.c
-```
-
----
-
-## 📖 What You’ll Learn
-
-This repository covers a wide range of topics in C programming:
-
-1. **Basics of C Programming**
-   - Variables and Data Types
-   - Input and Output
-   - Operators and Expressions
-2. **Control Structures**
-   - If-else Statements
-   - Loops (for, while, do-while)
-   - Switch Statements
-3. **Functions and Recursion**
-   - Defining and Calling Functions
-   - Pass by Value and Reference
-   - Recursive Functions
-4. **Pointers and Memory Management**
-   - Pointers and Addressing
-   - Dynamic Memory Allocation (malloc, calloc, free)
-5. **File Handling**
-   - Reading from and Writing to Files
-   - Binary Files and Serialization
-6. **Advanced Topics**
-   - Structures and Unions
-   - Preprocessor Directives
-   - Bitwise Operators
-7. **Best Practices**
-   - Writing Efficient and Clean Code
-   - Debugging and Error Handling
-
----
-
-## 🛠️ Tools You’ll Need
-
-To get started with C programming, you’ll need:
-
-1. **C Compiler**
-   - GCC (GNU Compiler Collection)
-   - Clang
-   - Turbo C (for retro users!)
-
-2. **Text Editor or IDE**
-   - Visual Studio Code (with C/C++ extension)
-   - Code::Blocks
-   - CLion
-   - Vim/Emacs (for advanced users)
-
-3. **Debugger (Optional)**
-   - GDB (GNU Debugger)
-
----
-
-## 📬 Contributions
-
-We welcome contributions to improve this repository! Here’s how you can contribute:
-
-1. **Fork the Repository**
-   - Click on the “Fork” button on the top-right corner of this page.
-
-2. **Clone Your Fork**
-   - Use the following command:
-
-     ```bash
-     git clone https://github.com/your-username/EveryThing_youNeed_ToLearn_C_Language.git
-     ```
-
-3. **Make Your Changes**
-   - Add notes, improve code, or suggest new exercises and projects.
-
-4. **Submit a Pull Request**
-   - Once your changes are ready, submit a pull request for review.
-
----
-
-## 📄 License
-
-This repository is licensed under the [MIT License](LICENSE). Feel free to use, modify, and share the content as you like!
-
----
-
-## 🌟 Support the Project
-
-If you find this repository helpful, please consider supporting it by:
-
-- Giving it a ⭐ on GitHub.
-- Sharing it with your friends and peers.
-
-<p align="center">
-    <a href="https://github.com/ExploitEngineer/EveryThing_youNeed_ToLearn_C_Language" target="_blank">
-        <img src="https://img.shields.io/badge/Star-⭐%20this%20repo-blue" alt="GitHub Star Badge"/>
-    </a>
-    <a href="#contributions" target="_blank">
-        <img src="https://img.shields.io/badge/Contribute-🤝%20to%20this%20project-green" alt="Contribute Badge"/>
-    </a>
-</p>
-
----
-
-## 🖥️ Happy Learning and Coding! 🎉
+`ROADMAP.md` holds the full plan this structure is built from.

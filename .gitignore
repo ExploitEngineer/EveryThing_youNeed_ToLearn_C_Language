@@ -1,29 +1,31 @@
-# Ignore object files
+# Compiled objects and binaries
 *.o
-
-# Ignore binary files (commonly produced)
+*.a
+*.so
 *.out
 *.elf
 *.bin
+*.gch
 
-# But DO NOT ignore .exe files
-# (So don't include: *.exe)
-
-# Ignore build directories (recursively)
+# Build output of the root Makefile
 build/
-bin/
-out/
-dist/
 
-# Ignore CMake and Make artifacts
+# CMake artifacts (this repo builds with the root Makefile, which stays tracked)
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 
-# Ignore editor or OS-generated files
+# Tooling
+compile_commands.json
+.cache/
+vgcore.*
+core
+*.dSYM/
+
+# Editor and OS noise
 .vscode/
+.idea/
 *.swp
+*.swo
 *.tmp
 .DS_Store
-
